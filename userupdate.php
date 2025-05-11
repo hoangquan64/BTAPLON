@@ -16,7 +16,7 @@
 
   if ($id) {
     
-      $sql = "SELECT id, name,email FROM users WHERE id = $id LIMIT 1";
+      $sql = "SELECT id, name,email FROM user WHERE id = $id LIMIT 1";
       $result = mysqli_query($conn, $sql);
       $user = null;
     
@@ -60,7 +60,7 @@
 <body>
   <div class="form-container">
     <h2>CẬP NHẬT THÔNG TIN KHÁCH HÀNG</h2>
-    <form action="addupdate" method="POST">
+    <form action="userupdate" method="POST">
       <label for="maKH">Mã khách hàng:</label>
       <input type="text" id="maKH" name="maKH" value="<?=$user['id']?>" readonly>
 

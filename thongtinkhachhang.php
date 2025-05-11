@@ -64,7 +64,7 @@ if (mysqli_num_rows($result) > 0) {
           <td>98471245</td>
           <td><?=$user['email']?></td>
           <td>
-            <a href="http://127.0.0.1/DABTAP/themsuathongtinkhachhang.php?id=<?=$user['id']?>"><button class="edit">Sửa</button></a>
+            <a href="http://127.0.0.1/DABTAP/addupdate.php?id=<?=$user['id']?>"><button class="edit">Sửa</button></a>
             <a href="deleteUser.php?user_id=<?=$user['id']?>"><button class="delete">Xóa</button></a>
           </td>
 

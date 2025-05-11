@@ -22,7 +22,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 $sql = "INSERT INTO users (name, email)
-VALUES ('$data[name]', '$data[name]')";
+VALUES ('$data['tenKH']', '$data['email']')";
 
 echo $sql;
 

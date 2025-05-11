@@ -1,0 +1,82 @@
+/* Làm nền nhẹ và căn giữa toàn bộ */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background: linear-gradient(to right, #e0eafc, #cfdef3);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Khung bao ngoài */
+.wrapper {
+  padding: 30px;
+}
+
+/* Hộp giỏ hàng */
+.cart-container {
+  width: 100%;
+  max-width: 700px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Tiêu đề */
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 25px;
+  font-size: 1.8rem;
+}
+
+/* Bảng giỏ hàng */
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.cart-table th, .cart-table td {
+  padding: 12px 10px;
+  text-align: center;
+  border-bottom: 1px solid #e0e0e0;
+  color: #444;
+}
+
+.cart-table thead {
+  background-color: #f5f7fa;
+  font-weight: bold;
+}
+
+/* Footer và tổng */
+.cart-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.1rem;
+  flex-wrap: wrap;
+}
+
+.total-price {
+  color: #28a745;
+  font-weight: bold;
+}
+
+/* Nút thanh toán */
+.checkout-btn {
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.checkout-btn:hover {
+  background-color: #0056b3;
+}
