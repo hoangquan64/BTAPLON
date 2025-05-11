@@ -10,7 +10,9 @@
       if (isset($_COOKIE['cart'])) {
         $carts = json_decode($_COOKIE['cart']);  // Get the number of items in the cart
 
-      } 
+      } else {
+        $carts = [];
+      }
       ?>
   <div class="cart-container">
     <h2>🛒 Giỏ hàng của bạn</h2>
@@ -25,8 +27,8 @@
       </thead>
       <tbody>
         <?php 
+          $total = 0;
           if(count($carts) > 0) {
-            $total = 0;
             foreach($carts as $item) {
               $total += $item->price * $item->quantity;
               ?>
@@ -46,7 +48,7 @@
 
     <div class="cart-footer">
       <p><strong>Tổng cộng:</strong> <span class="total-price"><?= $total ?></span></p>
-      <button class="checkout-btn">✅ Thanh toán</button>
+      <a href="taodonhang.php"><button class="checkout-btn">✅ Thanh toán</button></a>
     </div>
   </div>
 </body>

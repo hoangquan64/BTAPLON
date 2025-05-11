@@ -1,8 +1,4 @@
 <?php
-echo 'quan muon đang nhập user o day';
-//  show data
-var_dump($_POST);
-
 // khai báo thông tin cơ sở dữ liệu
 $servername = "localhost";
 $username = "root";
@@ -37,11 +33,11 @@ if (mysqli_num_rows($result) > 0) {
   echo "";
 }
 
-setcookie('user_name', $user['name'], time() + (86400 * 30), '/');
+setcookie('user', json_encode($user), time() + (86400 * 30), '/');
 
 // check role user
 if($user['role'] === 'admin') {
-  header("Location: http://baitaplon.test/btaplon/admin/admin.php");
+  header("Location: http://baitaplon.test/btaplon/admin");
   die();
 }
 

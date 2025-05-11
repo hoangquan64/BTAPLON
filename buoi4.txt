@@ -1,0 +1,9 @@
+admin:
+tk admin khi đăng nhập hiển thị trang quản lí sp lay du lieu trang sp,donhang lay du lieu don hang,thongtinkhachhang
+themgiohang hiển thi card+1 
+nhán card hiển thị sản phẩm dc them vao
+tạo bảng oder
+
+
+
+

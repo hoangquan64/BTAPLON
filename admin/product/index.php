@@ -47,7 +47,7 @@ if (mysqli_num_rows($result) > 0) {
     <!-- Main content -->
     <main class="main-content">
       <h1>📦 Danh sách sản phẩm</h1>
-      <a href="product/themsuamoi.php"><button>THeme san pham</button></a>
+      <a href="themsuamoi.php"><button>THeme san pham</button></a>
       <table class="admin-table">
         <thead>
           <tr>
