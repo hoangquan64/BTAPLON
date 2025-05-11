@@ -1,0 +1,66 @@
+- ôn lại
+ - hiển thị dữ liệu bằng cách nào
+	- dùng hàm echo để hiển thị chuỗi hoặc var_dump để hiển thị mọi loại dữ liệu
+	- echo 'sádd'
+	- var_dump('asdsd')
+
+ - Bên nhận : dùng $_POST hoặc $_GET
+ - Bên gửi dùng method POST hoặc GET
+
+- Trang đăng kí user
+   -Bên gửi
+      - nhap du lieu sumit ->pushregister
+
+  -Bên nhận
+         -ket noi user database
+         -luu ve database
+         - chuyen den trang dang nhap
+- Trang đăng nhập user
+  - Bên gửi
+     - Nhập name , password
+     - GỬi đi medthod để ẩn đi
+  - Bên nhận
+        -tu dữ lieu liêu ở bên gửi
+        - kiểm tra và đối chiếu thông tin trong database
+        - nếu đúng thì chuyen den trang chủ
+
+Sau khi đăng nhập
+      -dung setcooki lấy giá trị name từ database kèm theo thời gian tu khi đăng nhâp=
+      - Note -> lưu name từ database vào cookie, cookie sẽ lưu ở trình duyệt có thể xem trong dev tool
+      - bằng hàm setcookie('user_name', $user['name'], time() + (86400 * 30), '/');
+      - chuyển đến trang home va hiển thị user_name nếu hét thời gian đăng nhập thì hiển thị sumit dk va dangnhap 
+	
+dang xuat
+ - ở index -> chuyển hướng đén trang logout
+ - ở logout -> xóa cookie bằng cách set value = null và thời gian hết hạn là quá khư -> trở về index
+
+xoa user 
+  //sumit xoa thi chay delete from den id 
+  -Bên gửi : thông tin khách hàng gửi user_id
+  - bên nhận: nhận user_id -> connect db -> xóa user -> back về trang thông tin khách hàng
+
+
+Demo giở hảng :
+ - Mặt giao diện
+  - them nut đếm sản phẩm
+   - luu setcooki
+   - ktra tồn tại sp ch nếu ch thì in sp =1 còn roi thì + them 1;
+   - hiên thi nut đếm sp
+
+
+  - 
+
+ - Mặt logic
+
+	- chuyển hướng về trang addCart khi bấm nút thêm giỏ hàng và truyền thêm id sản phẩm
+	- ở trang addCart kiểm tra đã có sản phẩm trong cookie (cart) chưa, nếu 
+		- đa có thì tổng + 1
+		- chưa có thì tổng = 1
+	- chuyển về trang danh sách sản phẩm
+
+
+HOME :
+Trang update thông tin user -> tự làm, -> tương tự update sản phẩm http://127.0.0.1/DABTAP/suasanpham.php?id=1
+Trang tạo đơn hàng -> tương tự tạo sản phẩm -> http://127.0.0.1/DABTAP/themsuamoi.php
+List đơn hàng -> tương tự danh sách sản pham http://127.0.0.1/DABTAP/thongtin.php
+     

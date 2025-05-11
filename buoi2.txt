@@ -1,0 +1,61 @@
+Xampp 
+ - localhost -> 127.0.0.1
+ - run index.php in htdoc
+ - move folder DABTAP to htdoc -> run success
+
+Web dong
+
+ - csdl -> milk-sale
+ - http://localhost/phpmyadmin/ -> address mysql 
+ - table : product -> save info product
+ - 4 column : id : unique 
+		name : 
+		price : 
+		image :
+
+ - run php file
+ - change file ext .php
+ - <?php  //code here ?>
+ - echo , print, var_dump : hiện thị dữ liệu
+ - die: dung chuong trinh
+
+- ket noi database phan giao dien = $sp['colum'] + $kq + array_push{}
+
+- kết nối : dùng mysqli (ngoài ra có PDO) nhưng dùng mysqli vì dễ
+- mysqli_query hàm thực thi sql từ php
+- get được dữ liệu từ database về và đặt vào mảng products
+- sau khi có mảng product thì in ra dữ liệu động trên giao diện
+
+- có trang sản phẩm rồi
+- làm trang thông tin, giống hệt data nhưng khác giao diện
+  - copy toàn bộ phần connect và get products
+  - thay đổi tr và td trong for mới
+
+
+- trang thêm sản phẩm
+  - bên gủi
+  	- form action method : form là bằng attribute của input name
+  	- action : địa chỉ để gửi dữ liệu tới
+  	- method: cách gửi GET -> gửi thông tin public POST -> gửi thông tin nhưng ẩn đi
+  - bên nhận cần 
+	  - xác nhận dữ liệu, $_POST OR $_GET
+	  - luu dữ liệu
+
+- Trang update sản phẩm
+  - hiển thị giữ liệu sản phẩm
+         - sửa->loca.thémuamoi
+	- $GET[id]
+        - 
+  - lưu dữ liệu mới 
+
+
+
+
+  - chuyển hướng trang
+
+- tao bảng user : email,name,id,password 
+
+
+
+
+

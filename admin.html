@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quản lý Admin</title>
+  <link rel="stylesheet" href="admin.css">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+ 
+  <div class="sidebar">
+    <div class="logo">
+      <h2>Admin</h2>
+    </div>
+    <ul class="nav">
+      <li><a href="#">Tổng quan</a></li>
+      <li><a href="#">Sản phẩm</a></li>
+      <li><a href="#">Người dùng</a></li>
+      <li><a href="#">Đơn hàng</a></li>
+      <li><a href="#">Cài đặt</a></li>
+    </ul>
+  </div>
+
+  <!-- Content Area -->
+  <div class="content">
+    <header>
+      <div class="header-title">
+        <h1>Dashboard - Quản lý Bán Hàng</h1>
+      </div>
+      <div class="user-info">
+        <span>Admin</span> 
+        <i class="fas fa-user-circle"></i>
+      </div>
+    </header>
+
+    <div class="main-content">
+      <div class="card">
+        <h3>Tổng số sản phẩm</h3>
+        <p>120</p>
+      </div>
+      <div class="card">
+        <h3>Tổng số đơn hàng</h3>
+        <p>35</p>
+      </div>
+      <div class="card">
+        <h3>Tổng số người dùng</h3>
+        <p>500</p>
+      </div>
+      <div class="card">
+        <h3>Tổng doanh thu</h3>
+        <p>1,200,000 VND</p>
+      </div>
+    </div>
+
+    <!-- Table for products -->
+    <div class="table-section">
+      <h2>Danh sách Sản phẩm</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Tên sản phẩm</th>
+            <th>Giá</th>
+            <th>Danh mục</th>
+            <th>Hành động</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Sữa Tươi</td>
+            <td>50,000 VND</td>
+            <td>Sữa</td>
+            <td><button>Chỉnh sửa</button> <button>Xóa</button></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Sữa Bột</td>
+            <td>100,000 VND</td>
+            <td>Sữa</td>
+            <td><button>Chỉnh sửa</button> <button>Xóa</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+</body>
+</html>
