@@ -28,7 +28,7 @@ echo $sql;
 
 if (mysqli_query($conn, $sql)) {
   echo "New record created successfully";
-  header("Location: http://baitaplon.test/btaplon/themsuathongtinkhachhang.php");
+  header("Location: /btaplon/themsuathongtinkhachhang.php");
     die();
 } else {
   echo "Error: " . $sql . "<br>" . mysqli_error($conn);

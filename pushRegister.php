@@ -27,7 +27,7 @@ echo $sql;
 $result = mysqli_query($conn, $sql);
 
 if ($result) {
-  header("Location: http://baitaplon.test/btaplon/login.php");
+  header("Location: /btaplon/login.php");
   die();
 } else {
   echo "tạo không thành công";
@@ -43,7 +43,7 @@ if ($result) {
  
 //     if (mysqli_query($conn, $sql)) {
 //       echo "New record created successfully";
-//       header("Location: http://baitaplon.test/btaplon/login.php");
+//       header("Location: /btaplon/login.php");
 //         die();
 //     } else {
 //       echo "Error: " . $sql . "<br>" . mysqli_error($conn);

@@ -37,11 +37,11 @@ setcookie('user', json_encode($user), time() + (86400 * 30), '/');
 
 // check role user
 if($user['role'] === 'admin') {
-  header("Location: http://baitaplon.test/btaplon/admin");
+  header("Location: /btaplon/admin");
   die();
 }
 
-header("Location: http://baitaplon.test/btaplon");
+header("Location: /btaplon");
 die();
 
 var_dump($user);

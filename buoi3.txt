@@ -60,7 +60,7 @@ Demo giở hảng :
 
 
 HOME :
-Trang update thông tin user -> tự làm, -> tương tự update sản phẩm http://baitaplon.test/btaplon/suasanpham.php?id=1
-Trang tạo đơn hàng -> tương tự tạo sản phẩm -> http://baitaplon.test/btaplon/themsuamoi.php
-List đơn hàng -> tương tự danh sách sản pham http://baitaplon.test/btaplon/thongtin.php
+Trang update thông tin user -> tự làm, -> tương tự update sản phẩm /btaplon/suasanpham.php?id=1
+Trang tạo đơn hàng -> tương tự tạo sản phẩm -> /btaplon/themsuamoi.php
+List đơn hàng -> tương tự danh sách sản pham /btaplon/thongtin.php
      

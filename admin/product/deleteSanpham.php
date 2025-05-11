@@ -27,7 +27,7 @@ echo $sql;
 $result = mysqli_query($conn, $sql);
 
 if ($result) {
-  header("Location: http://baitaplon.test/btaplon/admin");
+  header("Location: /btaplon/admin");
   die();
 } else {
   echo "xoas không thành công";

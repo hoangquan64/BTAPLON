@@ -40,13 +40,13 @@
 
     if (mysqli_query($conn, $sql)) {
       echo "New record created successfully";
-      header("Location: http://baitaplon.test/btaplon/thongtinkhachhang.php");
+      header("Location: /btaplon/thongtinkhachhang.php");
         die();
     } else {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
   } else {
-    header("Location: http://baitaplon.test/btaplon/thongtinkhachhang.php");
+    header("Location: /btaplon/thongtinkhachhang.php");
     die();
   }
   ?>

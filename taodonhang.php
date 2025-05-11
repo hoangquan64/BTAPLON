@@ -59,7 +59,7 @@ if (isset($_COOKIE['cart'])) {
     }
 
     setcookie('cart', null, time() - 3600, '/');
-    header("Location: http://baitaplon.test/btaplon/giohang.php");
+    header("Location: /btaplon/giohang.php");
     die();
     //{ ["id"]=> string(1) "3" ["name"]=> string(3) "234" ["price"]=> string(3) "234" ["image"]=> string(0) "" ["quantity"]=> int(3) } 
     

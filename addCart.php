@@ -45,7 +45,7 @@ if ($result && mysqli_num_rows($result) > 0) {
 
     // Lưu lại giỏ hàng vào cookie (thời gian hết hạn 30 ngày)
     setcookie('cart', json_encode($cart), time() + (86400 * 30), '/'); 
-    header("Location: http://baitaplon.test/btaplon/sanpham.php"); // Chuyển hướng về trang giỏ hàng
+    header("Location: /btaplon/sanpham.php"); // Chuyển hướng về trang giỏ hàng
     exit();
 } else {
     echo "Không tìm thấy sản phẩm!";
