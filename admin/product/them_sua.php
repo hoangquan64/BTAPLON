@@ -24,8 +24,8 @@ echo $sql;
 
 if (mysqli_query($conn, $sql)) {
   echo "New record created successfully";
-  header("Location: http://127.0.0.1/DABTAP/themsuamoi.php");
-    die();
+  header("Location: http://baitaplon.test/btaplon/admin/");
+  die();
 } else {
   echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }

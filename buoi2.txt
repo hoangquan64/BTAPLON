@@ -1,7 +1,7 @@
 Xampp 
  - localhost -> 127.0.0.1
  - run index.php in htdoc
- - move folder DABTAP to htdoc -> run success
+ - move folder btaplon to htdoc -> run success
 
 Web dong
 

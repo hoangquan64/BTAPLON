@@ -25,7 +25,7 @@ if (mysqli_num_rows($result) > 0) {
    // echo "id: " . $row["id"]. " - Name: " . $row["name"]. " ?: " . $row["price"].  "img :". $row["image"]. "<br>";
   }
 } else {
-  echo "0 results";
+  echo "";
 }
 
 // var_dump($products);  
@@ -74,7 +74,7 @@ if (mysqli_num_rows($result) > 0) {
                 <td>Phát triển chiều cao và trí tuệ</td>
                 <td><img src="<?=$product['image'] ?>" alt="sua" width="60"></td>
                 <td>
-                  <a href="http://127.0.0.1/DABTAP/suasanpham.php?id=<?=$product['id']?>">
+                  <a href="http://baitaplon.test/btaplon/suasanpham.php?id=<?=$product['id']?>">
 
                     <button class="action-btn btn-edit">Sửa</button>
                   </a>

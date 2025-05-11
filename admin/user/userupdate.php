@@ -27,7 +27,7 @@
       // echo "id: " . $row["id"]. " - Name: " . $row["name"]. " ?: " . $row["price"].  "img :". $row["image"]. "<br>";
       }
     } else {
-      echo "0 results";
+      echo "";
     } 
   } else if ($_POST['id']) {
     $data = $_POST;
@@ -40,13 +40,13 @@
 
     if (mysqli_query($conn, $sql)) {
       echo "New record created successfully";
-      header("Location: http://127.0.0.1/DABTAP/thongtinkhachhang.php");
+      header("Location: http://baitaplon.test/btaplon/thongtinkhachhang.php");
         die();
     } else {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
   } else {
-    header("Location: http://127.0.0.1/DABTAP/thongtinkhachhang.php");
+    header("Location: http://baitaplon.test/btaplon/thongtinkhachhang.php");
     die();
   }
   ?>

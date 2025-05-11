@@ -25,7 +25,7 @@ if (mysqli_num_rows($result) > 0) {
    // echo "id: " . $row["id"]. " - Name: " . $row["name"]. " ?: " . $row["price"].  "img :". $row["image"]. "<br>";
   }
 } else {
-  echo "0 results";
+  echo "";
 }
 
 // var_dump($products);  
@@ -81,7 +81,8 @@ if (mysqli_num_rows($result) > 0) {
       <ion-icon name="cart" style="font-size: 30px; color: black;"></ion-icon>
       <?php 
       if (isset($_COOKIE['cart'])) {
-        $cart_count = $_COOKIE['cart'];  // Get the number of items in the cart
+        $cart_count = count(json_decode($_COOKIE['cart']));  // Get the number of items in the cart
+
         echo "<div style='position: absolute; top: 5px; right: 5px; background-color: white ; color: red; font-size: 12px; border-radius: 50%; width: 18px; height: 18px; display: flex; align-items: center; justify-content: center;'>$cart_count</div>";
       } else {
         echo "<div style='position: absolute; top: 5px; right: 5px; background-color: white; color: red; font-size: 12px; border-radius: 50%; width: 18px; height: 18px; display: flex; align-items: center; justify-content: center;'>0</div>";

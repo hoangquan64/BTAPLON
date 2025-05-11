@@ -2,5 +2,5 @@
 
 setcookie('user_name', null, time() - 3600, '/');
 
-header("Location: http://127.0.0.1/DABTAP");
+header("Location: http://baitaplon.test/btaplon");
 die();

@@ -2,7 +2,7 @@
 
 var_dump($_GET);
 
-$id = $_GET['product_id'];
+$id = $_GET['id'];
 
 //  show data
 //var_dump($_POST);
@@ -27,7 +27,7 @@ echo $sql;
 $result = mysqli_query($conn, $sql);
 
 if ($result) {
-  header("Location: http://127.0.0.1/DABTAP/thongtin.php");
+  header("Location: http://baitaplon.test/btaplon/admin");
   die();
 } else {
   echo "xoas không thành công";

@@ -15,9 +15,9 @@
       <nav>
         <ul>
           <li><a href="#">Trang Chủ</a></li>
-          <li><a href="/DABTAP/sanpham.php">Cửa Hàng</a></li>
-          <li><a href="/DABTAP/hotline.php">Liên Hệ</a></li>
-          <li><a href="/DABTAP/giohang.php"> Giỏ Hàng</a></li>
+          <li><a href="/btaplon/sanpham.php">Cửa Hàng</a></li>
+          <li><a href="/btaplon/hotline.php">Liên Hệ</a></li>
+          <li><a href="/btaplon/giohang.php"> Giỏ Hàng</a></li>
         </ul>
       </nav>
       <div class="user-buttons">
