@@ -1,9 +1,30 @@
 admin:
 tk admin khi đăng nhập hiển thị trang quản lí sp lay du lieu trang sp,donhang lay du lieu don hang,thongtinkhachhang
 themgiohang hiển thi card+1 
-nhán card hiển thị sản phẩm dc them vao
+nhán card hiển thị sản phẩm dc them vao : trang giỏ hàng
 tạo bảng oder
 
+
+// Note 
+Chia folder cho admin, chia folder theo đối tượng
+Tách sidebar file để dùng chung
+
+Check role khi đăng nhập
+    - admin thì vào admin 
+    - người dùng bình thường = user thì ở home
+
+THêm quản lí đơn hàng
+    - THêm sản phẩm vào giỏ hàng 
+    - ĐỔ dữ liệu trang giỏ hàng
+    - Tạo bảng order và order_detail
+        - bảng order để lưu thông tin khách hàng
+        - bảng order_detail lưu thông tin sản phẩm của order trên 
+    - lưu dữ liệu thừ cookie vào database
+    - sau khi lưu vào databse thì xóa dữ liệu ở cookie
+    - ĐỔ dữ liệu ra ở role admin
+Di chuyển quản lí người dùng và quản lí sản phẩm vào admin 
+
+Vấn đề tồn đọng, các chức năng xửa xóa trong admin -> tương tự như đã làm ở các buổi trước
 
 
 
